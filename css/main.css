@@ -504,25 +504,6 @@ svg {
 .input--sm textarea:focus {
   border-color: rgba(255, 255, 255, 0.4);
 }
-.input--text input {
-  background: #fff;
-  color: #000;
-}
-.input--text input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.input--text input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.input--text input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.input--text input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.input--text input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
 .input--select {
   position: relative;
   min-width: 130px;
@@ -629,12 +610,29 @@ svg {
   border-radius: 26px;
   position: relative;
 }
-.input__group .input--text {
+.input__group .input {
   border-radius: 20px;
 }
-.input__group .input--text input {
+.input__group .input input {
+  background: #fff;
+  color: #000;
   border-radius: inherit;
   padding: 1.6em 11em 1.6em 1.6em;
+}
+.input__group .input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__group .input input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__group .input input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__group .input input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__group .input input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 .input__group .button--primary {
   position: absolute;
@@ -1468,7 +1466,7 @@ svg {
   .input__group .input {
     font-size: 12px;
   }
-  .input__group .input--text input {
+  .input__group .input input {
     border-radius: 15px;
   }
   .input__group .button--primary {
@@ -1522,7 +1520,7 @@ svg {
   .input__group .input {
     font-size: 10px;
   }
-  .input__group .input--text input {
+  .input__group .input input {
     border-radius: 13px;
   }
   .input__group .button--primary {
@@ -1569,7 +1567,7 @@ svg {
   .input__group .input {
     font-size: 8px;
   }
-  .input__group .input--text input {
+  .input__group .input input {
     border-radius: 10px;
   }
   .input__group .button--primary {

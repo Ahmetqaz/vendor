@@ -44,15 +44,6 @@
       border-color: $white-3;
     }
   }
-  &--text {
-    input {
-      background: $white;
-      color: $black;
-      &::placeholder {
-        color: $black-3;
-      }
-    }
-  }
   &--select {
     position: relative;
     min-width: 130px;
@@ -155,12 +146,15 @@
     border-radius: 26px;
     position: relative;
     .input {
-      &--text {
-        border-radius: 20px;
-        input {
-          border-radius: inherit;
-          padding: 1.6em 11em 1.6em 1.6em;
+      border-radius: 20px;
+      input {
+        background: $white;
+        color: $black;
+        &::placeholder {
+          color: $black-3;
         }
+        border-radius: inherit;
+        padding: 1.6em 11em 1.6em 1.6em;
       }
     }
     .button {
@@ -752,10 +746,8 @@
       border-radius: 19px;
       .input {
         font-size: 12px;
-        &--text {
-          input {
-            border-radius: 15px;
-          }
+        input {
+          border-radius: 15px;
         }
       }
       .button {
@@ -778,10 +770,8 @@
       border-radius: 16px;
       .input {
         font-size: 10px;
-        &--text {
-          input {
-            border-radius: 13px;
-          }
+        input {
+          border-radius: 13px;
         }
       }
       .button {
@@ -801,10 +791,8 @@
       border-radius: 13px;
       .input {
         font-size: 8px;
-        &--text {
-          input {
-            border-radius: 10px;
-          }
+        input {
+          border-radius: 10px;
         }
       }
       .button {
