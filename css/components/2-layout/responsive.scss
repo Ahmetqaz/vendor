@@ -1,24 +1,35 @@
 @media (max-width: 1280px) {
+  @include footer-1280;
 }
 @media (max-width: 1160px) {
+  @include search-1160;
+  @include footer-1160;
 }
 @media (max-width: 1025px) {
+  @include components-1025;
   @include header-1025;
+  @include footer-1025;
 }
 @media (max-width: 940px) {
 }
 @media (max-width: 860px) {
   @include components-860;
   @include intro-860;
+  @include search-860;
 }
 @media (max-width: 768px) {
   .autoContainer {
     padding: 0 16px;
+    &--lg {
+      padding: 0 24px;
+    }
   }
 }
 @media (max-width: 580px) {
   @include components-580;
+  @include header-580;
   @include intro-580;
+  @include search-580;
 }
 @media (max-width: 460px) {
   @include components-460;
@@ -27,3 +38,22 @@
 @media (max-width: 380px) {
   @include intro-380;
 }
+
+// @mixin index-1280 {
+// }
+// @mixin index-1160 {
+// }
+// @mixin index-1025 {
+// }
+// @mixin index-940 {
+// }
+// @mixin index-860 {
+// }
+// @mixin index-768 {
+// }
+// @mixin index-580 {
+// }
+// @mixin index-460 {
+// }
+// @mixin index-380 {
+// }

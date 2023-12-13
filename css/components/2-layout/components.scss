@@ -103,7 +103,6 @@
         }
         &-container {
           position: relative;
-          color: $white-14;
           @include transition;
           .ico {
             position: absolute;
@@ -112,7 +111,8 @@
             transform: translateY(-50%);
             width: 16px;
             height: 16px;
-            color: inherit;
+            color: $white-14;
+            @include transition;
           }
         }
       }
@@ -133,6 +133,7 @@
         @include hideScroll;
         padding: 10px;
         z-index: 1;
+        pointer-events: none;
         &-item {
           font-family: $font-secondary;
           cursor: pointer;
@@ -168,6 +169,7 @@
         overflow-y: auto;
         opacity: 1;
         transition: max-height 0.4s ease, opacity 0.2s ease;
+        pointer-events: all;
       }
     }
   }
@@ -341,7 +343,6 @@
   width: 1em;
   height: 1em;
   color: $white;
-  transition: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -374,6 +375,55 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $linear-blue-3;
+  }
+}
+.avatar {
+  font-size: 12px;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  overflow: hidden;
+  background: $green-2;
+  position: relative;
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    width: 1.3em;
+    height: 1.3em;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__placeholder {
+    font-size: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    line-height: 1em;
+  }
+  &--border {
+    &::after {
+      content: "";
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid $white-4;
+      pointer-events: none;
+      border-radius: inherit;
+    }
   }
 }
 // -------------------
@@ -789,6 +839,13 @@
   }
 }
 
+@mixin components-1025 {
+  .main {
+    &--search {
+      padding-top: 110px;
+    }
+  }
+}
 @mixin components-860 {
   .input {
     &__group {
@@ -814,6 +871,11 @@
   }
 }
 @mixin components-580 {
+  .main {
+    &--search {
+      padding-top: 151px;
+    }
+  }
   .input {
     &__group {
       padding: 3.5px;
