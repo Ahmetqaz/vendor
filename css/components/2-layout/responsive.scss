@@ -1,0 +1,29 @@
+@media (max-width: 1280px) {
+}
+@media (max-width: 1160px) {
+}
+@media (max-width: 1025px) {
+  @include header-1025;
+}
+@media (max-width: 940px) {
+}
+@media (max-width: 860px) {
+  @include components-860;
+  @include intro-860;
+}
+@media (max-width: 768px) {
+  .autoContainer {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 580px) {
+  @include components-580;
+  @include intro-580;
+}
+@media (max-width: 460px) {
+  @include components-460;
+  @include intro-460;
+}
+@media (max-width: 380px) {
+  @include intro-380;
+}
