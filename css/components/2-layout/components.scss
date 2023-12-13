@@ -202,8 +202,8 @@
       height: calc(100% - 2px);
       border: 1px solid $white-5;
       position: absolute;
-      left: 1px;
-      top: 1px;
+      left: 0;
+      top: 0;
       border-radius: inherit;
       pointer-events: none;
     }
@@ -298,6 +298,15 @@
       .ico {
         color: $primary;
       }
+    }
+  }
+  &--ico {
+    padding: unset;
+    .ico {
+      color: inherit;
+      font-size: inherit;
+      width: 1.1em;
+      height: 1.1em;
     }
   }
   &:active {
