@@ -41,6 +41,11 @@
     justify-content: center;
     gap: 28px;
   }
+  .bg{
+    &__shape{
+      top: 48%;
+    }
+  }
   .autoContainer {
     flex: 1;
     display: flex;
@@ -74,6 +79,11 @@
           width: 10px;
           height: 10px;
         }
+      }
+    }
+    .bg{
+      &__shape{
+        top: 44%;
       }
     }
   }
