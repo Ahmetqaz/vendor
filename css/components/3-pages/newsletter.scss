@@ -1,0 +1,35 @@
+.hero {
+  &__image {
+    border-radius: 20px;
+    overflow: hidden;
+    .ratioImage {
+      padding-bottom: 56.3%;
+    }
+  }
+}
+
+.card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  background: $orange;
+  color: $black;
+  .button {
+    &--border {
+      color: $black;
+      border-color: $black-10;
+      font-size: 13px;
+      font-family: $font-primary;
+      padding: 0.5em 0.55em;
+    }
+    &--rounded {
+      padding: 0.5em 1.2em;
+    }
+  }
+  &__group {
+    display: flex;
+    gap: 8px;
+  }
+}

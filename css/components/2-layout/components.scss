@@ -284,6 +284,9 @@
       color: $primary;
     }
   }
+  &--rounded {
+    border-radius: 100px;
+  }
   &--text {
     font-weight: 500;
     color: $white-8;

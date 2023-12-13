@@ -783,6 +783,9 @@ svg {
   border-color: #0099ff;
   color: #0099ff;
 }
+.button--rounded {
+  border-radius: 100px;
+}
 .button--text {
   font-weight: 500;
   color: #9aa0a6;
@@ -1746,38 +1749,52 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.nav__inner-group {
+.nav__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
-.nav__inner-link {
+.nav__link {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 500;
+  padding: 0 5px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.nav__inner-link:hover {
-  color: #0099ff;
+.nav__link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: inherit;
+  transition: inherit;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+.nav__link:hover {
+  color: #fff;
+}
+.nav__link:hover::after {
+  width: 100%;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .burger {
@@ -2058,6 +2075,45 @@ svg {
 }
 .search .avatar--greenLight {
   background: #19c37d;
+}
+
+.hero__image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero__image .ratioImage {
+  padding-bottom: 56.3%;
+}
+
+.card {
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  background: #fa956b;
+  color: #000;
+}
+.card .button--border {
+  color: #000;
+  border-color: rgba(19, 19, 19, 0.4);
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  padding: 0.5em 0.55em;
+}
+.card .button--rounded {
+  padding: 0.5em 1.2em;
+}
+.card__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
 }
 
 @media (max-width: 1280px) {
