@@ -1568,7 +1568,7 @@ svg {
           justify-content: space-between;
 }
 .header__inner .burger {
-  display: block;
+  display: none;
 }
 .header__logo {
   font-size: 12px;
@@ -1651,9 +1651,6 @@ svg {
           justify-content: space-between;
   width: 100%;
 }
-.header__container .burger {
-  display: block;
-}
 .header--search {
   border-bottom: 1px solid #3c4043;
 }
@@ -1731,6 +1728,9 @@ svg {
 }
 .header.sticky .header__search {
   display: none;
+}
+.header--sm .header__inner .burger {
+  display: block;
 }
 
 .nav {

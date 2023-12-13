@@ -16,7 +16,7 @@
     z-index: 2;
     justify-content: space-between;
     .burger {
-      display: block;
+      display: none;
     }
   }
   &__logo {
@@ -71,9 +71,6 @@
     z-index: 2;
     justify-content: space-between;
     width: 100%;
-    .burger {
-      display: block;
-    }
   }
   &--search {
     border-bottom: 1px solid #3c4043;
@@ -139,6 +136,15 @@
     .header {
       &__search {
         display: none;
+      }
+    }
+  }
+  &--sm {
+    .header {
+      &__inner {
+        .burger {
+          display: block;
+        }
       }
     }
   }
