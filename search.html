@@ -12,31 +12,152 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main main--search">
     <!-- #header -->
-    <header class="header" id="header">
+    <header class="header header--search" id="header">
       <div class="autoContainer">
         <div class="header__inner">
-          <div class="nav" id="menu">
-            <div class="nav__inner">
-              <div class="nav__inner-group">
-                <a href="" class="nav__inner-link">About</a>
-                <a href="" class="nav__inner-link">Store</a>
+          <div class="header__container">
+            <a href="#" class="header__logo">
+              <img src="./images/logo.png" alt="logo">
+            </a>
+            <div class="header__group">
+              <button class="button button--primary">
+                <span>
+                  Sign up
+                </span>
+              </button>
+              <button class="burger" id="menuBtn"></button>
+            </div>
+          </div>
+          <div class="header__search">
+            <div class="header__search-container">
+              <div class="input input--ico">
+                <input type="text" placeholder="Search…">
+                <span class="ico">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.49955 2C8.52344 1.99994 9.52702 2.28568 10.3973 2.82507C11.2676 3.36447 11.9701 4.13608 12.4256 5.05306C12.8811 5.97004 13.0716 6.99597 12.9757 8.01536C12.8798 9.03475 12.5012 10.0071 11.8825 10.823L13.7675 12.707C13.8372 12.7767 13.8925 12.8594 13.9302 12.9504C13.9679 13.0414 13.9873 13.139 13.9873 13.2375C13.9873 13.336 13.9679 13.4336 13.9302 13.5246C13.8925 13.6156 13.8372 13.6983 13.7675 13.768C13.6979 13.8377 13.6152 13.8929 13.5242 13.9306C13.4331 13.9683 13.3356 13.9877 13.237 13.9877C13.1385 13.9877 13.041 13.9683 12.9499 13.9306C12.8589 13.8929 12.7762 13.8377 12.7065 13.768L10.8225 11.883C10.1271 12.4102 9.31623 12.7643 8.45687 12.9161C7.59752 13.0679 6.71438 13.0131 5.88041 12.7561C5.04645 12.4992 4.2856 12.0474 3.66073 11.4383C3.03586 10.8291 2.56491 10.08 2.2868 9.25286C2.00868 8.4257 1.93138 7.54424 2.06128 6.6813C2.19117 5.81837 2.52455 4.99872 3.03385 4.2901C3.54315 3.58148 4.21375 3.00421 4.99026 2.606C5.76677 2.20779 6.62689 2.00007 7.49955 2ZM3.49955 7.5C3.49955 8.56087 3.92097 9.57828 4.67112 10.3284C5.42126 11.0786 6.43868 11.5 7.49955 11.5C8.56041 11.5 9.57783 11.0786 10.328 10.3284C11.0781 9.57828 11.4995 8.56087 11.4995 7.5C11.4995 6.43913 11.0781 5.42172 10.328 4.67157C9.57783 3.92143 8.56041 3.5 7.49955 3.5C6.43868 3.5 5.42126 3.92143 4.67112 4.67157C3.92097 5.42172 3.49955 6.43913 3.49955 7.5Z"
+                      fill="currentCollor" />
+                  </svg>
+                </span>
+              </div>
+              <div class="header__search-buttons">
+                <button class="button button--border">
+                  <span>
+                    ChatGPT
+                  </span>
+                </button>
+                <button class="button button--border">
+                  <span>
+                    Thropic
+                  </span>
+                </button>
+                <button class="button button--border">
+                  <span>
+                    Gemini
+                  </span>
+                </button>
+              </div>
+              <div class="header__search-group">
+                <div class="header__search-box">
+                  <div class="input input--select">
+                    <input type="hidden">
+                    <div class="input__selected input__selected--chevron">
+                      All filters
+                    </div>
+                    <ul class="input__dropdown">
+                      <li class="input__dropdown-item" data-value="name">
+                        By name
+                      </li>
+                      <li class="input__dropdown-item" data-value="date">
+                        By date
+                      </li>
+                      <li class="input__dropdown-item" data-value="id">
+                        By id
+                      </li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <button class="button button--text">
+                    <span>
+                      Tools
+                    </span>
+                  </button>
+                </div>
+                <div class="input input--select">
+                  <input type="hidden">
+                  <div class="input__selected input__selected--chevron">
+                    SafeSearch
+                  </div>
+                  <ul class="input__dropdown">
+                    <li class="input__dropdown-item" data-value="Search-1">
+                      Search-1
+                    </li>
+                    <li class="input__dropdown-item" data-value="Search-2">
+                      Search-2
+                    </li>
+                    <li class="input__dropdown-item" data-value="Search-3">
+                      Search-3
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <button class="button button--primary">
-            <span>
-              Sign up
-            </span>
-          </button>
-          <button class="burger" id="menuBtn"></button>
         </div>
       </div>
     </header>
     <!-- #header end-->
-    <!-- #intro start-->
-    <!-- #intro end-->
+    <!-- #search start-->
+    <section class="search">
+      <div class="autoContainer autoContainer--lg">
+        <div class="search__inner">
+          <div class="input input--select">
+            <input type="hidden">
+            <div class="input__selected-container">
+              <div class="input__selected">
+              </div>
+              <span class="ico">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.82031" y="5.72998" width="2.00001" height="7.00001" rx="1"
+                    transform="rotate(-45 1.82031 5.72998)" fill="currentCollor" />
+                  <rect x="10.7695" y="4.31982" width="2.00001" height="7.00001" rx="1"
+                    transform="rotate(45 10.7695 4.31982)" fill="currentCollor" />
+                </svg>
+              </span>
+            </div>
+            <ul class="input__dropdown">
+              <li class="input__dropdown-item" data-default data-value="3.5">
+                <span>
+                  ChatGPT
+                </span>
+                <small>
+                  3.5
+                </small>
+              </li>
+              <li class="input__dropdown-item" data-value="3.4">
+                <span>
+                  ChatGPT
+                </span>
+                <small>
+                  3.4
+                </small>
+              </li>
+              <li class="input__dropdown-item" data-value="3.2">
+                <span>
+                  ChatGPT
+                </span>
+                <small>
+                  3.2
+                </small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #search end-->
     <!-- #footer -->
     <footer class="footer">
       <div class="autoContainer">
@@ -47,6 +168,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="./js/customSelect.js"></script>
 </body>
 
 </html>

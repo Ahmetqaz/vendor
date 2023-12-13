@@ -1,0 +1,33 @@
+.search {
+  padding: 30px 0 40px;
+  &__inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .input {
+    &--select {
+      .input {
+        &__selected {
+          font-size: 16px;
+          padding: 0 24px 0 0;
+          font-size: 16px;
+          color: $white;
+          font-weight: 500;
+          font-family: $font-roboto;
+          small {
+            font-size: 17px;
+            color: #c5c5d2;
+          }
+          &-container {
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+        &__dropdown {
+          top: calc(100% + 10px);
+        }
+      }
+    }
+  }
+}
